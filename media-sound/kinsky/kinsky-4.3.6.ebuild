@@ -46,7 +46,7 @@ src_install() {
 	insinto /usr/share/menu
 	doins usr/share/menu/*
 	insinto /usr/lib
-	doins -r usr/lib/Kinsky/*
+	doins -r usr/lib/Kinsky
 	insinto /usr/bin
 	doins usr/bin/Kinsky
 	fperms +x /usr/bin/Kinsky
