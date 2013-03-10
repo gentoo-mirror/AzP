@@ -34,6 +34,10 @@ S=${WORKDIR}/"VDrift"
 
 src_prepare() {
 	epatch "${FILESDIR}/${MY_P}c.patch"
+
+	if has_version ">=sci-physics/bullet-2.81"; then
+		epatch "${FILESDIR}/vdrift-2012-07-22c_bullet281.patch"
+	fi
 }
 
 src_compile() {
