@@ -70,6 +70,7 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PN}-0.97.0-gnome-doc.patch #159831
 	epatch "${FILESDIR}"/${PN}-0.97.2-glib-2.31.patch #401331
 	epatch "${FILESDIR}"/${PN}-0.97.2-underlinking.patch #420685
+	epatch "${FILESDIR}"/${PN}-0.97.2-autotools.patch
 
 	if use python; then
 		python_convert_shebangs -r 2 .

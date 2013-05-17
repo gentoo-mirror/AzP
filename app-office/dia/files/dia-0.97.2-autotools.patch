@@ -1,0 +1,13 @@
+diff --git a/app-office/dia/configure.in b/app-office/dia/configure.in
+index 3890d1d..4362ce7 100644
+--- a/app-office/dia/configure.in
++++ b/app-office/dia/configure.in
+@@ -9,7 +9,7 @@ AC_PREREQ(2.50)
+ AC_REVISION($Revision: 1.288 $)
+ 
+ dnl Specify a header configuration file
+-AM_CONFIG_HEADER(config.h)
++AC_CONFIG_HEADERS(config.h)
+ 
+ AC_CANONICAL_HOST
+ 
