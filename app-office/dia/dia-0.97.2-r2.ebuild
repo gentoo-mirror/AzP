@@ -18,7 +18,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="alpha amd64 ~arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos"
 # the doc USE flag doesn't seem to do anything without docbook2html
-IUSE="cairo doc gnome2 gnome3 python"
+IUSE="cairo doc gnome2 +gnome3 python"
 
 RDEPEND=">=dev-libs/glib-2
 	dev-libs/libxml2
