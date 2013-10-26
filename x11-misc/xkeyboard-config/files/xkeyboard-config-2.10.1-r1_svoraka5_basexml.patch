@@ -1,0 +1,15 @@
+--- rules/base.xml.in		2013-08-26 00:29:54.000000000 +0200
++++ rules/base.xml.in_new	2013-10-26 18:44:49.130801519 +0200
+@@ -4561,6 +4561,12 @@
+         </variant>
+         <variant>
+           <configItem>
++            <name>dvorak_a5</name>
++            <_description>Swedish (Dvorak A5)</_description>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
+             <name>rus</name>
+             <!-- Keyboard indicator for Russian layouts -->
+             <_shortDescription>ru</_shortDescription>
