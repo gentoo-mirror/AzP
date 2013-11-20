@@ -18,7 +18,7 @@ KEYWORDS="x86 amd64"
 
 IUSE="usb"
 
-RDEPEND="usb? ( dev-libs/libusb )"
+RDEPEND="usb? ( virtual/libusb )"
 
 DEPEND="${RDEPEND}"
 
