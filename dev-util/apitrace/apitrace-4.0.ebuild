@@ -38,6 +38,7 @@ EMULTILIB_PKG="true"
 
 PATCHES=(
 	"${FILESDIR}"/${P}-system-libs.patch
+	"${FILESDIR}"/${P}-glxtrace-only.patch
 	"${FILESDIR}"/${P}-cmake-snappy.patch
 )
 
