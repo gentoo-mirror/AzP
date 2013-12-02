@@ -1,9 +1,9 @@
---- rules/base.extras.xml	2013-12-02 22:42:01.412960467 +0100
-+++ rules/base.extras.xml	2013-12-02 22:41:59.192960333 +0100
+--- rules/base.extras.xml.in	2013-12-02 22:42:01.412960467 +0100
++++ rules/base.extras.xml.in	2013-12-02 22:41:59.192960333 +0100
 @@ -679,8 +679,16 @@
          <name>se</name>
-         <shortDescription>sv</shortDescription>
-         <description>Swedish</description>
+         <_shortDescription>sv</_shortDescription>
+         <_description>Swedish</_description>
 -	  </configItem>
 -	  <variantList>
 +      </configItem>
@@ -11,7 +11,7 @@
 +        <variant>
 +          <configItem>
 +            <name>dvorak_a5</name>
-+            <description>Swedish (Dvorak A5)</description>
++            <_description>Swedish (Dvorak A5)</_description>
 +          </configItem>
 +        </variant>
 +      </variantList>
