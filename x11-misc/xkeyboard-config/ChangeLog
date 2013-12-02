@@ -2,6 +2,9 @@
 # Copyright 1999-2013 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/x11-misc/xkeyboard-config/ChangeLog,v 1.192 2013/10/08 05:09:09 ago Exp $
 
+  02 Dec 2013; Peter Asplund <peterasplund@gentoo.se> xkeyboard-config-2.10.1-r1.ebuild:
+  Move Svorak A5 layout to extras by request of upstream
+
   26 Oct 2013; Peter Asplund <peterasplund@gentoo.se> xkeyboard-config-2.10.1-r1.ebuild:
   Add Svorak A5 layout, wrt bug #486978
 

@@ -34,7 +34,7 @@ XORG_CONFIGURE_OPTIONS=(
 )
 
 src_prepare() {
-	epatch "${FILESDIR}/${P}-r1_svoraka5_basexml.patch"
+	epatch "${FILESDIR}/${P}-r1_svoraka5_baseextrasxml.patch"
 	epatch "${FILESDIR}/${P}-r1_svoraka5.patch"
 	xorg-2_src_prepare
 	if [[ ${XORG_EAUTORECONF} != no ]]; then
