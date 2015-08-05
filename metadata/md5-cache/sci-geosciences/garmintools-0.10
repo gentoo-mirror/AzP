@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=7ec5b75ef5240a9d578afa13461bcbfe
+SLOT=0
+DEFINED_PHASES=compile install unpack
+EAPI=0
+DEPEND=usb? ( virtual/libusb )
+DESCRIPTION=A Linux interface to the Garmin Forerunner GPS units
+LICENSE=GPL-2
+IUSE=usb
+SRC_URI=http://garmintools.googlecode.com/files/garmintools-0.10.tar.gz
+KEYWORDS=x86 amd64
+HOMEPAGE=http://code.google.com/p/garmintools/
+RDEPEND=usb? ( virtual/libusb )

@@ -1,0 +1,12 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3
+_md5_=e8469b2af14f6d919db2f19b19ce2cc5
+SLOT=0
+DEFINED_PHASES=compile install postinst prepare
+EAPI=2
+DEPEND=media-gfx/gimp media-libs/glew x11-libs/gtkglext virtual/pkgconfig
+DESCRIPTION=Gimp plug-in for converting images into RGB normal maps
+LICENSE=GPL-2
+SRC_URI=http://gimp-normalmap.googlecode.com/files/gimp-normalmap-1.2.2.tar.bz2
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://code.google.com/p/gimp-normalmap/
+RDEPEND=media-gfx/gimp media-libs/glew x11-libs/gtkglext

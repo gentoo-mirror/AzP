@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	mono	203a4295c06155d318bdff9c6b2d5e1c	versionator	cd0bcdb170807e4a1984115e9d53a26f	multilib	62927b3db3a589b0806255f3a002d5d3	gnome2-utils	5cdfd22a2163c9d3a891648bd19453a7	libtool	52d0e17251d04645ffaa61bfdd858944	gnome.org	8fef8f967214f56e08fa92d61163d891	fdo-mime	acfe1a88fd8751a1d5dc671168219fa	autotools	2264f05fbbbaaf83d34ec81e72b38ffd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=22a2d0547d45755c4c8b3bd78e819e85
+SLOT=0
+DEFINED_PHASES=install postinst postrm preinst prepare unpack
+EAPI=4
+DEPEND=>=dev-lang/mono-2.0.1 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 app-arch/xz-utils >=sys-apps/sed-4
+DESCRIPTION=Control your Linn DS player.
+LICENSE=BSD
+RESTRICT=mirror strip
+SRC_URI=http://oss.linn.co.uk/Releases/Kinsky/Davaar/kinsky_4.3.13-1_all.deb
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://oss.linn.co.uk/
+RDEPEND=>=dev-lang/mono-2.0.1
