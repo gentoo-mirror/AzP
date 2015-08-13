@@ -1,0 +1,15 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml. Please add
+# your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+media-sound/kinsky:boo - Use external Boo instead of the bundled one
+media-sound/kinsky:bpm - Build beats per minute detection extension
+media-sound/kinsky:cdda - Build with audio CD support
+media-sound/kinsky:daap - Build with Daap support
+media-sound/kinsky:karma - Build with karma support
+media-sound/kinsky:web - Enable support for plugins that access web-based services such as Amazon and wikipedia (requires net-libs/webkit-gtk)
+media-sound/kinsky:youtube - Enable the Youtube plugin
+net-misc/vinagre:rdp - Enable access to Windows RDP protocol using net-misc/rdesktop
+net-misc/vinagre:spice - Enable access to SPICE-enabled virtual machines
+net-misc/vinagre:ssh - Enable ssh plugin using x11-libs/vte
+net-misc/vinagre:telepathy - Enable access to remote desktop via a net-libs/telepathy-glib client
