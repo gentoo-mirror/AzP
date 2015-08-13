@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install unpack
 DEPEND=usb? ( virtual/libusb )
 DESCRIPTION=A Linux interface to the Garmin Forerunner GPS units
+EAPI=0
 HOMEPAGE=http://code.google.com/p/garmintools/
 IUSE=usb
 KEYWORDS=x86 amd64
