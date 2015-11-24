@@ -1,12 +1,12 @@
 app-office/dia 0.97.2-r1 0.97.2-r2: Diagram/flowchart creation program
-dev-libs/folks 0.11.0: 
+dev-libs/folks 0.11.0: Library for aggregating people from multiple sources
 games-action/subspacebattle-svn 0.999: A strategic multiplayer space shoot 'em up in 3D
 media-gfx/alchemy 0.8 9999: Drawing program used for creating shapes, with interactivity and creativity as main focus.
 media-plugins/gimp-normalmap 1.2.2-r1: Gimp plug-in for converting images into RGB normal maps
 media-sound/kinsky 4.3.6 4.3.13: Control your Linn DS player.
-media-sound/morituri 9999: 
+media-sound/morituri 9999: A CD ripper aiming for accuracy over speed.
 media-sound/tuxguitar 1.2: TuxGuitar is a multitrack guitar tablature editor and player written in Java-SWT
 media-video/vobsub2srt 9999: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
-net-misc/vinagre 3.16.1-r1: 
+net-misc/vinagre 3.16.1-r1: VNC client for the GNOME desktop
 net-p2p/rsstorrent 0.6: Tool for automatically downloading torrents using RSS feeds
 sci-geosciences/garmintools 0.10: A Linux interface to the Garmin Forerunner GPS units
