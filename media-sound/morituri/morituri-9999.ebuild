@@ -16,23 +16,23 @@ EGIT_HAS_SUBMODULES=1
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="x86 amd64"
 IUSE="alac +cdio doc +cddb +flac test wav wavpack"
 
 RDEPEND="media-sound/cdparanoia
-	media-plugins/gst-plugins-cdparanoia
+	media-plugins/gst-plugins-cdparanoia:0.10
 	app-cdr/cdrdao
-	media-libs/gstreamer
-	>=media-libs/gst-plugins-base-0.10.22
-	alac? ( media-plugins/gst-plugins-ffmpeg )
+	media-libs/gstreamer:0.10
+	media-libs/gst-plugins-base:0.10
+	alac? ( media-plugins/gst-plugins-ffmpeg:0.10 )
 	cdio? ( dev-python/pycdio )
 	cddb? ( dev-python/cddb-py )
-	flac? ( media-plugins/gst-plugins-flac )
-	wav? ( media-libs/gst-plugins-good )
-	wavpack? ( media-plugins/gst-plugins-wavpack )
+	flac? ( media-plugins/gst-plugins-flac:0.10 )
+	wav? ( media-libs/gst-plugins-good:0.10 )
+	wavpack? ( media-plugins/gst-plugins-wavpack:0.10 )
 	doc? ( dev-python/epydoc )
 	test? ( dev-python/pychecker )
-	dev-python/gst-python
+	dev-python/gst-python:0.10
 	dev-python/python-musicbrainz
 	dev-python/python-musicbrainz-ngs
 	dev-python/pygobject
