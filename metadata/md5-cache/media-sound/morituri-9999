@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare setup unpack
-DEPEND=media-sound/cdparanoia media-plugins/gst-plugins-cdparanoia app-cdr/cdrdao media-libs/gstreamer >=media-libs/gst-plugins-base-0.10.22 alac? ( media-plugins/gst-plugins-ffmpeg ) cdio? ( dev-python/pycdio ) cddb? ( dev-python/cddb-py ) flac? ( media-plugins/gst-plugins-flac ) wav? ( media-libs/gst-plugins-good ) wavpack? ( media-plugins/gst-plugins-wavpack ) doc? ( dev-python/epydoc ) test? ( dev-python/pychecker ) dev-python/gst-python dev-python/python-musicbrainz dev-python/python-musicbrainz-ngs dev-python/pygobject dev-python/pygtk dev-python/pyxdg !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/git
+DEPEND=media-sound/cdparanoia media-plugins/gst-plugins-cdparanoia:0.10 app-cdr/cdrdao media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 alac? ( media-plugins/gst-plugins-ffmpeg:0.10 ) cdio? ( dev-python/pycdio ) cddb? ( dev-python/cddb-py ) flac? ( media-plugins/gst-plugins-flac:0.10 ) wav? ( media-libs/gst-plugins-good:0.10 ) wavpack? ( media-plugins/gst-plugins-wavpack:0.10 ) doc? ( dev-python/epydoc ) test? ( dev-python/pychecker ) dev-python/gst-python:0.10 dev-python/python-musicbrainz dev-python/python-musicbrainz-ngs dev-python/pygobject dev-python/pygtk dev-python/pyxdg !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/git
 DESCRIPTION=A CD ripper aiming for accuracy over speed.
 EAPI=5
 HOMEPAGE=http://thomas.apestaart.org/morituri/trac/
 IUSE=alac +cdio doc +cddb +flac test wav wavpack python_targets_python2_7
-KEYWORDS=~x86 ~amd64
+KEYWORDS=x86 amd64
 LICENSE=GPL-3
-RDEPEND=media-sound/cdparanoia media-plugins/gst-plugins-cdparanoia app-cdr/cdrdao media-libs/gstreamer >=media-libs/gst-plugins-base-0.10.22 alac? ( media-plugins/gst-plugins-ffmpeg ) cdio? ( dev-python/pycdio ) cddb? ( dev-python/cddb-py ) flac? ( media-plugins/gst-plugins-flac ) wav? ( media-libs/gst-plugins-good ) wavpack? ( media-plugins/gst-plugins-wavpack ) doc? ( dev-python/epydoc ) test? ( dev-python/pychecker ) dev-python/gst-python dev-python/python-musicbrainz dev-python/python-musicbrainz-ngs dev-python/pygobject dev-python/pygtk dev-python/pyxdg
+RDEPEND=media-sound/cdparanoia media-plugins/gst-plugins-cdparanoia:0.10 app-cdr/cdrdao media-libs/gstreamer:0.10 media-libs/gst-plugins-base:0.10 alac? ( media-plugins/gst-plugins-ffmpeg:0.10 ) cdio? ( dev-python/pycdio ) cddb? ( dev-python/cddb-py ) flac? ( media-plugins/gst-plugins-flac:0.10 ) wav? ( media-libs/gst-plugins-good:0.10 ) wavpack? ( media-plugins/gst-plugins-wavpack:0.10 ) doc? ( dev-python/epydoc ) test? ( dev-python/pychecker ) dev-python/gst-python:0.10 dev-python/python-musicbrainz dev-python/python-musicbrainz-ngs dev-python/pygobject dev-python/pygtk dev-python/pyxdg
 SLOT=0
 _eclass_exported_funcs=pkg_setup:python-single-r1 src_unpack:git-2 src_prepare:- src_configure:- src_install:-
 _eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	bash-completion-r1	acf715fa09463f043fbfdc1640f3fb85	eutils	b83a2420b796f7c6eff682679d08fe25	git-2	7af5d170bfc02983b4bcd3167dc5edd4	libtool	4890219c51da247200223277f993e054	multilib	165fc17c38d1b11dac2008280dab6e80	python-single-r1	2ebea8fbab356d63110245129a67a6dd	python-utils-r1	c0ed2a2f233d3af6dd556048695dc5cb	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
-_md5_=21e684979b77bec7740b6562317ac774
+_md5_=9eb33ccaa3b45069a639835167bcea23
