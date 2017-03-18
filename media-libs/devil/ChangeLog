@@ -1,0 +1,8 @@
+*devil-1.7.8-r3 (18 Mar 2017)
+
+  18 Mar 2017; Peter Asplund <peterasplund@gentoo.se> +devil-1.7.8-r3.ebuild,
+  +files/devil-1.7.8-CVE-2009-3994.patch, +files/devil-1.7.8-ILUT.patch,
+  +files/devil-1.7.8-fix-test.patch, +files/devil-1.7.8-libpng14.patch,
+  +files/devil-1.7.8-nvtt-glut.patch, +files/devil-1.7.8-restrict.patch,
+  +files/devil-1.7.8-uchar.patch, +metadata.xml:
+  Add new devil version
