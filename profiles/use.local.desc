@@ -2,6 +2,8 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+media-libs/devil:allegro - Add support for Allegro
+media-libs/devil:nvtt - Add support for media-gfx/nvidia-texture-tools
 media-sound/kinsky:boo - Use external Boo instead of the bundled one
 media-sound/kinsky:bpm - Build beats per minute detection extension
 media-sound/kinsky:cdda - Build with audio CD support

@@ -1,9 +1,10 @@
 dev-cpp/oclint 0.10.2 0.11: Static code analysis tool for improving quality and reducing defects in C, C++ and Objective-C code
 games-action/subspacebattle-svn 0.999: A strategic multiplayer space shoot 'em up in 3D
 media-gfx/alchemy 0.8 9999: Drawing program used for creating shapes, with interactivity and creativity as main focus.
+media-libs/devil 1.7.8-r3: DevIL image library
 media-plugins/gimp-normalmap 1.2.2-r1: Gimp plug-in for converting images into RGB normal maps
 media-sound/kinsky 4.3.13: Control your Linn DS player.
 media-sound/morituri 9999: A CD ripper aiming for accuracy over speed.
 media-video/vobsub2srt 9999: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
+net-p2p/rsstorrent 0.6: Tool for automatically downloading torrents using RSS feeds
 sci-geosciences/garmintools 0.10: A Linux interface to the Garmin Forerunner GPS units
-sys-apps/roccat-tools 5.4.0: Utility for advanced configuration of Roccat devices
