@@ -1,13 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI="4"
-PYTHON_DEPEND="2:2.7"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.5 3.*"
+EAPI="6"
 
-inherit distutils vcs-snapshot
+PYTHON_COMPAT=( python2_7 )
+
+inherit distutils-r1 vcs-snapshot
 
 DESCRIPTION="Tool for automatically downloading torrents using RSS feeds"
 HOMEPAGE="http://azp.github.com/rsstorrent/"
@@ -18,16 +16,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="dev-python/feedparser
-		dev-python/python-daemon"
+RDEPEND="dev-python/feedparser[${PYTHON_USEDEP}]
+		dev-python/python-daemon[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}
-		dev-python/setuptools"
-
-PYTHON_MODNAME="${PN}.py"
+		dev-python/setuptools[${PYTHON_USEDEP}]"
 
 src_install() {
-	distutils_src_install
-
 	insinto /etc/init.d
 	newins "${S}/rsstorrent-gentoo" rsstorrent
 	insinto /etc/conf.d
@@ -38,8 +32,6 @@ src_install() {
 }
 
 pkg_postinst() {
-	distutils_pkg_postinst
-
 	einfo "For rsstorrent to work, you need to set up a user for which"
 	einfo "the downloads should be handled. This is done by editing the"
 	einfo "configuration file /etc/conf.d/rsstorrent, as well as copying"
