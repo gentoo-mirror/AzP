@@ -2,6 +2,12 @@
 # Copyright 1999-2017 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/net-p2p/rsstorrent/ChangeLog,v 1.26 2013/05/17 15:48:09 AzP Exp $
 
+*rsstorrent-0.6-r1 (22 Mar 2017)
+
+  22 Mar 2017; Peter Asplund <peterasplund@gentoo.se> +rsstorrent-0.6-r1.ebuild,
+  -rsstorrent-0.6.ebuild:
+  Version bump 0.6-r1. Clean up based on python devs' feedback
+
   18 Mar 2017; Peter Asplund <peterasplund@gentoo.se> metadata.xml,
   rsstorrent-0.6.ebuild:
   Update ebuild to new distutils. Fixes bug #609782 and #613012

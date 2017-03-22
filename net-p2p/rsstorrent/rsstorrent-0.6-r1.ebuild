@@ -14,7 +14,6 @@ SRC_URI="https://github.com/AzP/${PN}/tarball/v${PV} -> ${P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
 
 RDEPEND="dev-python/feedparser[${PYTHON_USEDEP}]
 		dev-python/python-daemon[${PYTHON_USEDEP}]"
@@ -22,10 +21,8 @@ DEPEND="${RDEPEND}
 		dev-python/setuptools[${PYTHON_USEDEP}]"
 
 src_install() {
-	insinto /etc/init.d
-	newins "${S}/rsstorrent-gentoo" rsstorrent
-	insinto /etc/conf.d
-	newins "${S}/rsstorrent_conf.d" rsstorrent
+	doinitd "${S}/rsstorrent-gentoo" rsstorrent
+	doconfd "${S}/rsstorrent_conf.d" rsstorrent
 	dodir /etc/rsstorrent
 	insinto /etc/rsstorrent
 	newins "${S}/rsstorrent.conf" rsstorrent.conf.sample
