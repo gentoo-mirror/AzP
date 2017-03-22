@@ -6,5 +6,5 @@ media-plugins/gimp-normalmap 1.2.2-r1: Gimp plug-in for converting images into R
 media-sound/kinsky 4.3.13: Control your Linn DS player.
 media-sound/morituri 9999: A CD ripper aiming for accuracy over speed.
 media-video/vobsub2srt 9999: Converts image subtitles created by VobSub (.sub/.idx) to .srt textual subtitles using tesseract OCR engine
-net-p2p/rsstorrent 0.6: Tool for automatically downloading torrents using RSS feeds
+net-p2p/rsstorrent 0.6-r1: Tool for automatically downloading torrents using RSS feeds
 sci-geosciences/garmintools 0.10: A Linux interface to the Garmin Forerunner GPS units
