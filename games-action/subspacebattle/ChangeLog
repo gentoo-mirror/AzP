@@ -4,9 +4,9 @@
 *subspacebattle-0.9999 (17 Feb 2018)
 
 	17 Feb 2018; P.Asplund <peterasplund@gentoo.se> ChangeLog :
-	Added initial ChangeLog
+	Update ebuild to use git. Clean up using repoman.
 
 *subspacebattle-0.3 (12 Aug 2009)
-  
-  12 Aug 2009; P.Asplund <peterasplund@gentoo.se> ChangeLog :
-  Added initial ChangeLog
+
+	12 Aug 2009; P.Asplund <peterasplund@gentoo.se> ChangeLog :
+	Added initial ChangeLog
