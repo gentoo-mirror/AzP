@@ -1,0 +1,12 @@
+# ChangeLog for games-action/subspacebattle
+# Copyright 2002-2018 Gentoo Foundation; Distributed under the GPL v2
+
+*subspacebattle-0.9999 (17 Feb 2018)
+
+	17 Feb 2018; P.Asplund <peterasplund@gentoo.se> ChangeLog :
+	Update ebuild to use git. Clean up using repoman.
+
+*subspacebattle-0.3 (12 Aug 2009)
+
+	12 Aug 2009; P.Asplund <peterasplund@gentoo.se> ChangeLog :
+	Added initial ChangeLog
