@@ -1,6 +1,10 @@
 # ChangeLog for media-plugins/gimp-normalmap
-# Copyright 1999-2012 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2018 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
+
+  18 Feb 2018; AzP <peterasplund@gentoo.se> gimp-normalmap-1.2.2-r1.ebuild,
+  metadata.xml:
+  Clean up all complaints by repoman
 
   22 Sep 2013; Peter Asplund <peterasplund@gentoo.se> gimp-normalmap-1.2.2-r2.ebuild:
   Add -lm to linker libraries
@@ -17,4 +21,3 @@
   +gimp-normalmap-1.2.2.ebuild, +metadata.xml:
   New package, wrt bug 187052, many thanks to Dennis Schridde, binki,
   chithead, Tommy[D]
-

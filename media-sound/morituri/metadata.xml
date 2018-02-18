@@ -11,10 +11,16 @@
 		<name>Proxy Maintainers</name>
 	</maintainer>
 	<use>
-		<flag name="qt5">Build Qt5 based GUI</flag>
-		<flag name="python">Build with python support</flag>
+		<flag name="alac">Build with ALAC support</flag>
+		<flag name="cdio">Build with cdio support</flag>
+		<flag name="doc">Generate documentation</flag>
+		<flag name="cddb">Build with cddb support</flag>
+		<flag name="flac">Build with flac support</flag>
+		<flag name="test">Build tests</flag>
+		<flag name="wav">Build with wav support</flag>
+		<flag name="wavpack">Build with wavpack support</flag>
 	</use>
 	<upstream>
-		<remote-id type="github">baldurk/renderdoc</remote-id>
+		<remote-id type="github">thomasvs/morituri</remote-id>
 	</upstream>
 </pkgmetadata>

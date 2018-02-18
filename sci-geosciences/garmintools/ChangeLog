@@ -1,0 +1,3 @@
+  18 Feb 2018; AzP <peterasplund@gentoo.se> +metadata.xml,
+  garmintools-0.10.ebuild:
+  Clean up all complaints by repoman
