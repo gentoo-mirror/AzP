@@ -1,3 +1,6 @@
+  18 Feb 2018; AzP <peterasplund@gentoo.se> devil-1.7.8-r3.ebuild:
+  Clean up all complaints by repoman
+
 *devil-1.7.8-r3 (18 Mar 2017)
 
   18 Mar 2017; Peter Asplund <peterasplund@gentoo.se> +devil-1.7.8-r3.ebuild,

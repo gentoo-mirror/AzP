@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -18,17 +18,13 @@ export QT_SELECT="qt5"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
-IUSE="+cli +qt5 +python"
+IUSE="+qt5 +python"
 
 RDEPEND="${PYTHON_DEPS}
+	dev-libs/libpcre
 	x11-libs/libX11
 	x11-libs/libxcb
 	x11-libs/xcb-util-keysyms
-	dev-util/cmake
-	sys-devel/bison
-	sys-devel/autoconf
-	sys-devel/automake
-	dev-libs/libpcre
 	>=sys-devel/gcc-5.0:*
 	python? (
 		>=dev-lang/python-3.6
@@ -40,9 +36,10 @@ RDEPEND="${PYTHON_DEPS}
 		dev-qt/qtsvg:5
 		dev-qt/qtx11extras:5
 	)"
-DEPEND="${RDEPEND}"
+DEPEND="${RDEPEND}
+	dev-util/cmake
+	sys-devel/bison"
 
 PATCHES=(
 	#"${FILESDIR}"/${PN}-qrenderdoc-cmakelists-qmake5.patch
 )
-

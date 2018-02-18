@@ -1,12 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=3
+EAPI=5
 
-inherit eutils fdo-mime java-pkg-2 java-ant-2 versionator subversion
+inherit eutils xdg-utils java-pkg-2 java-ant-2 versionator subversion
 
-DESCRIPTION="Drawing program used for creating shapes, with interactivity and creativity as main focus."
+DESCRIPTION="Drawing program with interactivity and creativity as main focus."
 HOMEPAGE="http://al.chemy.org/"
 ESVN_REPO_URI="http://svn.al.chemy.org/svn"
 
@@ -27,7 +26,6 @@ src_prepare() {
 JAVA_ANT_REWRITE_CLASSPATH="true"
 EANT_BUILD_XML="./Alchemy/build.xml"
 
-
 src_compile() {
 	local mem
 	use amd64 && mem="320"
@@ -37,7 +35,6 @@ src_compile() {
 	export ANT_OPTS="-Xmx${mem}m"
 	java-pkg-2_src_compile
 }
-
 
 src_install() {
 	java-pkg_dojar Alchemy/dist/Alchemy.jar
@@ -49,10 +46,9 @@ src_install() {
 
 	newicon "${WORKDIR}"/${P}/Alchemy/src/org/alchemy/data/alchemy-logo64.png alchemy.png
 	domenu "${FILESDIR}/${PN}.desktop"
-
 }
 
 pkg_postinst() {
-	fdo-mime_desktop_database_update
+	xdg_desktop_database_update
+	xdg_mimeinfo_database_update
 }
-

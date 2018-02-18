@@ -1,8 +1,7 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=2
+EAPI=6
 
 inherit toolchain-funcs
 
@@ -16,7 +15,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="media-gfx/gimp
-	media-libs/glew
+	media-libs/glew:*
 	x11-libs/gtkglext"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
