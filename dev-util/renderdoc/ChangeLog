@@ -1,2 +1,7 @@
+*renderdoc-1.0 (10 Mar 2018)
+
+  10 Mar 2018; Peter Asplund <peter.asplund@gentoo.se> +renderdoc-1.0.ebuild:
+  dev-util/renderdoc:   Create ebuild for RenderDoc v1.0
+
   18 Feb 2018; AzP <peterasplund@gentoo.se> metadata.xml, renderdoc-9999.ebuild:
   Clean up all complaints by repoman
