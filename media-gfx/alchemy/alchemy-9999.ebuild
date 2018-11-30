@@ -1,9 +1,9 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=6
 
-inherit eutils xdg-utils java-pkg-2 java-ant-2 versionator subversion
+inherit eutils java-pkg-2 java-ant-2 subversion
 
 DESCRIPTION="Drawing program with interactivity and creativity as main focus."
 HOMEPAGE="http://al.chemy.org/"
@@ -46,9 +46,4 @@ src_install() {
 
 	newicon "${WORKDIR}"/${P}/Alchemy/src/org/alchemy/data/alchemy-logo64.png alchemy.png
 	domenu "${FILESDIR}/${PN}.desktop"
-}
-
-pkg_postinst() {
-	xdg_desktop_database_update
-	xdg_mimeinfo_database_update
 }
