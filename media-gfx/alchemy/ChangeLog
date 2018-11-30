@@ -1,3 +1,6 @@
+  30 Nov 2018; AzP <peterasplund@gentoo.se> alchemy-9999.ebuild:
+  media-gfx/alchemy:   Clean up Alchemy ebuild. No real changes.
+
   18 Feb 2018; AzP <peterasplund@gentoo.se> +metadata.xml, -alchemy-0.8.ebuild,
   -files/alchemy-0.8-build.xml-install.patch, alchemy-9999.ebuild:
   Clean up all complaints by repoman
