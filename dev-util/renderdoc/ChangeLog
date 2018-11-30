@@ -1,3 +1,10 @@
+*renderdoc-1.1 (27 Nov 2018)
+
+  27 Nov 2018; AzP <peterasplund@gentoo.se> +renderdoc-1.1.ebuild,
+  renderdoc-1.0.ebuild, renderdoc-9999.ebuild:
+  dev-util/renderdoc:   Bump to version 1.1 and clean up some incorrect python
+  slots
+
 *renderdoc-1.0 (10 Mar 2018)
 
   10 Mar 2018; Peter Asplund <peter.asplund@gentoo.se> +renderdoc-1.0.ebuild:

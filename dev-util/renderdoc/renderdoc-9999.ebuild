@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -27,7 +27,7 @@ RDEPEND="${PYTHON_DEPS}
 	x11-libs/xcb-util-keysyms
 	>=sys-devel/gcc-5.0:*
 	python? (
-		>=dev-lang/python-3.6
+		>=dev-lang/python-3.6:*
 	)
 	qt5? (
 		dev-qt/qtcore:5
@@ -39,7 +39,3 @@ RDEPEND="${PYTHON_DEPS}
 DEPEND="${RDEPEND}
 	dev-util/cmake
 	sys-devel/bison"
-
-PATCHES=(
-	#"${FILESDIR}"/${PN}-qrenderdoc-cmakelists-qmake5.patch
-)
