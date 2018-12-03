@@ -1,7 +1,7 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=6
 inherit autotools eutils
 
 MY_P=DevIL-${PV}
@@ -23,18 +23,16 @@ RDEPEND="allegro? ( media-libs/allegro:0 )
 	mng? ( media-libs/libmng:= )
 	nvtt? ( media-gfx/nvidia-texture-tools )
 	openexr? ( media-libs/openexr:= )
-	opengl? ( virtual/opengl
-		virtual/glu )
+	opengl? ( virtual/opengl virtual/glu )
 	png? ( media-libs/libpng:0= )
 	sdl? ( media-libs/libsdl )
 	tiff? ( media-libs/tiff:0 )
 	xpm? ( x11-libs/libXpm )
 	X? ( x11-libs/libXext
-		 x11-libs/libX11
-		 x11-libs/libXrender )"
+	x11-libs/libX11
+	x11-libs/libXrender )"
 DEPEND="${RDEPEND}
-	virtual/pkgconfig
-	X? ( x11-proto/xextproto )"
+	virtual/pkgconfig"
 
 src_prepare() {
 	epatch "${FILESDIR}"/${P}-{CVE-2009-3994,libpng14,nvtt-glut,ILUT,restrict,fix-test,uchar}.patch
