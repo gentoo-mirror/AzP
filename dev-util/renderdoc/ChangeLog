@@ -1,3 +1,9 @@
+*renderdoc-1.2 (28 Jan 2019)
+
+  28 Jan 2019; AzP <peterasplund@gentoo.se> +renderdoc-1.2.ebuild:
+  dev-util/renderdoc:   Bump RenderDoc version to 1.2      Signed-off-by: Peter
+  Asplund <peter.azp@gmail.com>
+
 *renderdoc-1.1 (27 Nov 2018)
 
   27 Nov 2018; AzP <peterasplund@gentoo.se> +renderdoc-1.1.ebuild,
