@@ -3,16 +3,16 @@
 
 EAPI="6"
 PYTHON_COMPAT=( python3_6 )
-inherit qmake-utils eutils python-single-r1
+inherit qmake-utils cmake-utils eutils python-single-r1
 
+SWIG_VERSION="6"
+SWIG_ZIP_FILENAME="${PN}_swig_modified-${SWIG_VERSION}.zip"
 DESCRIPTION="A tool for tracing, analyzing, and debugging graphics APIs"
 HOMEPAGE="https://github.com/baldurk/renderdoc"
-SRC_URI="https://github.com/baldurk/renderdoc/archive/v${PV}.tar.gz
-	qt5? ( https://github.com/baldurk/swig/archive/renderdoc-modified-6.zip )"
+SRC_URI="https://github.com/baldurk/renderdoc/archive/v${PV}.tar.gz -> ${P}.tar.gz
+		qt5? ( https://github.com/baldurk/swig/archive/renderdoc-modified-${SWIG_VERSION}.zip -> ${SWIG_ZIP_FILENAME} )"
 CMAKE_BUILD_TYPE="Release"
 CMAKE_BUILD_GENERATOR="Ninja"
-RENDERDOC_SWIG_PACKAGE="${DISTFILES}/renderdoc-modified-6.zip"
-export QT_SELECT="qt5"
 
 LICENSE="MIT"
 SLOT="0"
@@ -37,4 +37,13 @@ RDEPEND="${PYTHON_DEPS}
 DEPEND="${RDEPEND}
 	>=sys-devel/gcc-6.0:*
 	dev-util/cmake
-	sys-devel/bison"
+	sys-devel/bison
+	app-arch/unzip"
+
+src_configure() {
+	export QT_SELECT=qt5
+	local mycmakeargs=(
+		-DRENDERDOC_SWIG_PACKAGE="${DISTDIR}/${SWIG_ZIP_FILENAME}"
+	)
+	cmake-utils_src_configure
+}
