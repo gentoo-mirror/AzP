@@ -17,12 +17,13 @@ IUSE=""
 DEPEND=">=sys-devel/llvm-5.0.0
 		dev-util/ninja"
 
-src_unpack() {
-	default
-}
-
 src_configure() {
 	CMAKE_USE_DIR="${S}"/oclint-core cmake-utils_src_configure
+}
+
+src_compile() {
+	cd "${WORKDIR}/oclint-scripts/"
+	./make
 }
 
 src_install() {
