@@ -1,6 +1,12 @@
 # ChangeLog for media-plugins/gimp-normalmap
-# Copyright 1999-2018 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2019 Gentoo Authors; Distributed under the GPL v2
 # $Header: $
+
+*gimp-normalmap-1.2.3 (23 Feb 2019)
+
+  23 Feb 2019; AzP <peterasplund@gentoo.se> +gimp-normalmap-1.2.3.ebuild:
+  media-plugins/gimp-normalmap:   Bump version to 1.2.3.  Signed-off-by: Peter
+  Asplund <peter.azp@gmail.com>
 
   18 Feb 2018; AzP <peterasplund@gentoo.se> gimp-normalmap-1.2.2-r1.ebuild,
   metadata.xml:
