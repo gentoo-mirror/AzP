@@ -1,1 +1,8 @@
+dev-cpp/oclint 0.13.1: Static code analysis tool for C, C++ and Objective-C code
+dev-util/renderdoc 1.0 1.1 1.2 9999: A tool for tracing, analyzing, and debugging graphics APIs
+games-action/subspacebattle 0.999: A strategic multiplayer space shoot 'em up in 3D
+media-gfx/alchemy 9999: Drawing program with interactivity and creativity as main focus.
+media-libs/devil 1.7.8-r3 1.8.0: DevIL image library
+media-plugins/gimp-normalmap 1.2.2-r1 1.2.3: Gimp plug-in for converting images into RGB normal maps
+net-p2p/rsstorrent 0.6-r1 0.7: Tool for automatically downloading torrents using RSS feeds
 sci-geosciences/garmintools 0.10: A Linux interface to the Garmin Forerunner GPS units
