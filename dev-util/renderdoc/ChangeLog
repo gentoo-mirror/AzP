@@ -1,3 +1,9 @@
+*renderdoc-1.5 (15 Dec 2019)
+
+  15 Dec 2019; AzP <peterasplund@gentoo.se> +renderdoc-1.5.ebuild:
+  dev-util/renderdoc:   Bump version to 1.5  Signed-off-by: Peter Asplund
+  <peter.azp@gmail.com>
+
   29 Jan 2019; AzP <peterasplund@gentoo.se> renderdoc-1.2.ebuild:
   dev-util/renderdoc:   Bump RenderDoc version to 1.2  Signed-off-by: Peter
   Asplund <peter.azp@gmail.com> Package-Manager: Portage-2.3.59, Repoman-2.3.12
