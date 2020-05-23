@@ -1,8 +1,8 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
-PYTHON_COMPAT=( python3_6 )
+EAPI="7"
+PYTHON_COMPAT=( python3_6 python3_7 )
 inherit qmake-utils cmake-utils eutils python-single-r1
 
 SWIG_VERSION="6"
@@ -28,11 +28,11 @@ RDEPEND="${PYTHON_DEPS}
 		>=dev-lang/python-3.6:*
 	)
 	qt5? (
-		dev-qt/qtcore:5
-		dev-qt/qtgui:5
-		dev-qt/qtwidgets:5
-		dev-qt/qtsvg:5
-		dev-qt/qtx11extras:5
+		>=dev-qt/qtcore-5.6:5
+		>=dev-qt/qtgui-5.6:5
+		>=dev-qt/qtwidgets-5.6:5
+		>=dev-qt/qtsvg-5.6:5
+		>=dev-qt/qtx11extras-5.6:5
 	)"
 DEPEND="${RDEPEND}
 	>=sys-devel/gcc-6.0:*
@@ -42,6 +42,7 @@ DEPEND="${RDEPEND}
 
 src_configure() {
 	export QT_SELECT=qt5
+	export QMAKE_QT5_COMMAND=qmake-qt5
 	local mycmakeargs=(
 		-DRENDERDOC_SWIG_PACKAGE="${DISTDIR}/${SWIG_ZIP_FILENAME}"
 	)

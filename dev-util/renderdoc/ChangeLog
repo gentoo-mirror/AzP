@@ -1,3 +1,11 @@
+*renderdoc-1.5-r1 (23 May 2020)
+*renderdoc-1.8 (23 May 2020)
+
+  23 May 2020; AzP <peterasplund@gentoo.se> +renderdoc-1.5-r1.ebuild,
+  +renderdoc-1.8.ebuild, -renderdoc-1.2.ebuild, -renderdoc-1.5.ebuild,
+  renderdoc-9999.ebuild:
+  dev-util/renderdoc: Update supported python version and swig
+
 *renderdoc-1.5 (15 Dec 2019)
 
   15 Dec 2019; AzP <peterasplund@gentoo.se> +renderdoc-1.5.ebuild:

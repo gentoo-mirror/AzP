@@ -1,11 +1,11 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
-PYTHON_COMPAT=( python3_6 python3_7 )
+EAPI="7"
+PYTHON_COMPAT=( python3_6 python3_7 python3_8 )
 inherit qmake-utils cmake-utils eutils python-single-r1
 
-SWIG_VERSION="6"
+SWIG_VERSION="7"
 SWIG_ZIP_FILENAME="${PN}_swig_modified-${SWIG_VERSION}.zip"
 DESCRIPTION="A tool for tracing, analyzing, and debugging graphics APIs"
 HOMEPAGE="https://github.com/baldurk/renderdoc"
@@ -25,7 +25,7 @@ RDEPEND="${PYTHON_DEPS}
 	x11-libs/libxcb
 	x11-libs/xcb-util-keysyms
 	python? (
-		>=dev-lang/python-3.6:*
+		${PYTHON_DEPS}
 	)
 	qt5? (
 		>=dev-qt/qtcore-5.6:5
