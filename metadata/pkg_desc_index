@@ -1,4 +1,5 @@
 dev-cpp/oclint 0.13.1: Static code analysis tool for C, C++ and Objective-C code
+dev-python/python-daemon 2.1.2-r1: Library to implement a well-behaved Unix daemon process
 dev-util/renderdoc 1.5-r1 1.8 9999: A tool for tracing, analyzing, and debugging graphics APIs
 games-action/subspacebattle 0.999: A strategic multiplayer space shoot 'em up in 3D
 media-gfx/alchemy 9999: Drawing program with interactivity and creativity as main focus.
