@@ -1,0 +1,6 @@
+*python-daemon-2.1.2-r1 (26 May 2020)
+
+  26 May 2020; AzP <peterasplund@gentoo.se> +metadata.xml,
+  +python-daemon-2.1.2-r1.ebuild:
+  dev-python/python-daemon:   Add python 3.8 support.  Signed-off-by: Peter
+  Asplund <peter.azp@gmail.com>
