@@ -5,5 +5,5 @@ games-action/subspacebattle 0.999: A strategic multiplayer space shoot 'em up in
 media-gfx/alchemy 9999: Drawing program with interactivity and creativity as main focus.
 media-libs/devil 1.8.0 1.8.0-r1: DevIL image library
 media-plugins/gimp-normalmap 1.2.2-r1 1.2.3: Gimp plug-in for converting images into RGB normal maps
-net-p2p/rsstorrent 0.6-r1 0.7: Tool for automatically downloading torrents using RSS feeds
+net-p2p/rsstorrent 0.8: Tool for automatically downloading torrents using RSS feeds
 sci-geosciences/garmintools 0.10: A Linux interface to the Garmin Forerunner GPS units
