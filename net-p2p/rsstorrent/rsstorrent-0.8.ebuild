@@ -4,6 +4,7 @@
 EAPI="7"
 
 PYTHON_COMPAT=( python3_{6,7,8} )
+DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit distutils-r1 vcs-snapshot
 
@@ -15,10 +16,11 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-RDEPEND="dev-python/feedparser[${PYTHON_USEDEP}]
+BDEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
+DEPEND=""
+RDEPEND="${DEPEND}
+		dev-python/feedparser[${PYTHON_USEDEP}]
 		dev-python/python-daemon[${PYTHON_USEDEP}]"
-DEPEND="${RDEPEND}
-		dev-python/setuptools[${PYTHON_USEDEP}]"
 
 src_install() {
 	doinitd "${S}/rsstorrent-gentoo" rsstorrent

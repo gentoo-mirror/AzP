@@ -2,6 +2,10 @@
 # Copyright 1999-2020 Gentoo Authors; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/net-p2p/rsstorrent/ChangeLog,v 1.26 2013/05/17 15:48:09 AzP Exp $
 
+  27 May 2020; AzP <peterasplund@gentoo.se> rsstorrent-0.8.ebuild:
+  net-p2p/rsstorrent:   Add BDEPEND and new python ebuild stuff  Signed-off-by:
+  Peter Asplund <peter.azp@gmail.com>
+
 *rsstorrent-0.8 (27 May 2020)
 
   27 May 2020; AzP <peterasplund@gentoo.se> +rsstorrent-0.8.ebuild,
