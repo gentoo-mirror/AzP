@@ -1,6 +1,13 @@
 # ChangeLog for net-p2p/rsstorrent
-# Copyright 1999-2017 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2020 Gentoo Authors; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/net-p2p/rsstorrent/ChangeLog,v 1.26 2013/05/17 15:48:09 AzP Exp $
+
+*rsstorrent-0.8 (27 May 2020)
+
+  27 May 2020; AzP <peterasplund@gentoo.se> +rsstorrent-0.8.ebuild,
+  -rsstorrent-0.6-r1.ebuild, -rsstorrent-0.7.ebuild:
+  net-p2p/rsstorrent:   Bump version to 0.8 and remove old Python versions.
+  Signed-off-by: Peter Asplund <peter.azp@gmail.com>
 
 *rsstorrent-0.6-r1 (22 Mar 2017)
 
