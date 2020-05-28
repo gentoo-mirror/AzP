@@ -25,7 +25,7 @@ RDEPEND="${DEPEND}
 python_install_all() {
 	distutils-r1_python_install_all
 
-	newinitd "${S}/rsstorrent-gentoo" rsstorrent
+	newinitd "${S}/rsstorrent-openrc" rsstorrent
 	newconfd "${S}/rsstorrent_conf.d" rsstorrent
 	dodir /etc/rsstorrent
 	insinto /etc/rsstorrent
