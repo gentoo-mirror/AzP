@@ -22,9 +22,11 @@ RDEPEND="${DEPEND}
 		dev-python/feedparser[${PYTHON_USEDEP}]
 		dev-python/python-daemon[${PYTHON_USEDEP}]"
 
-src_install() {
-	doinitd "${S}/rsstorrent-gentoo" rsstorrent
-	doconfd "${S}/rsstorrent_conf.d" rsstorrent
+python_install_all() {
+	distutils-r1_python_install_all
+
+	newinitd "${S}/rsstorrent-gentoo" rsstorrent
+	newconfd "${S}/rsstorrent_conf.d" rsstorrent
 	dodir /etc/rsstorrent
 	insinto /etc/rsstorrent
 	newins "${S}/rsstorrent.conf" rsstorrent.conf.sample
