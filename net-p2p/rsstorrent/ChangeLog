@@ -3,6 +3,9 @@
 # $Header: /var/cvsroot/gentoo-x86/net-p2p/rsstorrent/ChangeLog,v 1.26 2013/05/17 15:48:09 AzP Exp $
 
   28 May 2020; AzP <peterasplund@gentoo.se> rsstorrent-0.8.ebuild:
+  net-p2p/rsstorrent:
+
+  28 May 2020; AzP <peterasplund@gentoo.se> rsstorrent-0.8.ebuild:
   net-p2p/rsstorrent:   Fix build issues with doins/doconf. Replace with
   newins/newconf. Override distutils-r1 function correctly.  Signed-off-by:
   Peter Asplund <peter.azp@gmail.com>
