@@ -1,3 +1,11 @@
+*python-daemon-2.2.4 (29 May 2020)
+
+  29 May 2020; AzP <peterasplund@gentoo.se> +python-daemon-2.2.4.ebuild,
+  -python-daemon-2.1.2-r1.ebuild:
+  dev-python/python-daemon:   Version bump python-daemon and clean up
+  dependencies according to feedback from mgorny on bug #725874  Signed-off-by:
+  Peter Asplund <peter.azp@gmail.com>
+
 *python-daemon-2.1.2-r1 (26 May 2020)
 
   26 May 2020; AzP <peterasplund@gentoo.se> +metadata.xml,
