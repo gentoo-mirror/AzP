@@ -1,3 +1,8 @@
+*renderdoc-1.9 (17 Oct 2020)
+
+  17 Oct 2020; AzP <peterasplund@gentoo.se> +renderdoc-1.9.ebuild:
+  dev-util/renderdoc:   Version bump to v1.9.
+
 *renderdoc-1.5-r1 (23 May 2020)
 *renderdoc-1.8 (23 May 2020)
 
