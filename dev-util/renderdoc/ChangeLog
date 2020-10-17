@@ -1,3 +1,8 @@
+*renderdoc-1.10 (17 Oct 2020)
+
+  17 Oct 2020; AzP <peterasplund@gentoo.se> +renderdoc-1.10.ebuild:
+  dev-util/renderdoc:   Version bump to v1.10. Port ebuild to cmake.eclass.
+
 *renderdoc-1.9 (17 Oct 2020)
 
   17 Oct 2020; AzP <peterasplund@gentoo.se> +renderdoc-1.9.ebuild:
