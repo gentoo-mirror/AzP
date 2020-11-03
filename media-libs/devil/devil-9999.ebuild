@@ -3,13 +3,14 @@
 
 EAPI=7
 
-inherit eutils cmake
+inherit git-r3 eutils cmake
 
-S=${WORKDIR}/DevIL-${PV}/DevIL/
+S=${WORKDIR}/devil-${PV}/DevIL/
 
 DESCRIPTION="DevIL image library"
 HOMEPAGE="http://openil.sourceforge.net/"
-SRC_URI="https://github.com/DentonW/DevIL/archive/v${PV}.tar.gz"
+EGIT_REPO_URI="https://github.com/DentonW/DevIL.git"
+SRC_URI=""
 
 LICENSE="LGPL-2.1"
 SLOT="0"
