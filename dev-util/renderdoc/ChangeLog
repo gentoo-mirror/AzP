@@ -1,3 +1,11 @@
+*renderdoc-1.11 (20 Feb 2021)
+
+  20 Feb 2021; AzP <peterasplund@gentoo.se> +renderdoc-1.11.ebuild,
+  -renderdoc-1.5-r1.ebuild, -renderdoc-1.8.ebuild, -renderdoc-1.9.ebuild,
+  renderdoc-9999.ebuild:
+  dev-util/renderdoc:       Version bump to v1.11. Currently failing to build.
+  Signed-off-by: Peter Asplund <peter.azp@gmail.com>
+
 *renderdoc-1.10 (17 Oct 2020)
 
   17 Oct 2020; AzP <peterasplund@gentoo.se> +renderdoc-1.10.ebuild:

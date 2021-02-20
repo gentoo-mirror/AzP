@@ -1,20 +1,17 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
-PYTHON_COMPAT=( python3_6 python3_7 )
-inherit qmake-utils cmake-utils eutils python-single-r1
+PYTHON_COMPAT=( python3_6 python3_7 python3_8 )
+inherit qmake-utils cmake eutils python-single-r1 git-r3
 
-SWIG_VERSION="6"
+SWIG_VERSION="7"
 SWIG_ZIP_FILENAME="${PN}_swig_modified-${SWIG_VERSION}.zip"
-inherit qmake-utils cmake-multilib eutils python-single-r1 git-r3
-
 DESCRIPTION="A tool for tracing, analyzing, and debugging graphics APIs"
 HOMEPAGE="https://github.com/baldurk/renderdoc"
 EGIT_REPO_URI="https://github.com/baldurk/renderdoc.git"
 EGIT_BRANCH="v1.x"
 CMAKE_BUILD_TYPE="Release"
-CMAKE_BUILD_GENERATOR="Ninja"
 
 LICENSE="MIT"
 SLOT="0"
@@ -48,5 +45,5 @@ src_configure() {
 	local mycmakeargs=(
 		-DRENDERDOC_SWIG_PACKAGE="${DISTDIR}/${SWIG_ZIP_FILENAME}"
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
