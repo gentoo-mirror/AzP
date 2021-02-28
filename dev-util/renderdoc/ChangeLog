@@ -1,3 +1,7 @@
+  28 Feb 2021; AzP <peterasplund@gentoo.se> metadata.xml, renderdoc-1.12.ebuild:
+  dev-util/renderdoc:           Add use flags to control CMake build flags.
+  Signed-off-by: Peter Asplund <peter.azp@gmail.com>
+
 *renderdoc-1.12 (21 Feb 2021)
 
   21 Feb 2021; AzP <peterasplund@gentoo.se> +renderdoc-1.12.ebuild,

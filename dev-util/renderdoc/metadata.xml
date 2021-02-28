@@ -13,6 +13,13 @@
 	<use>
 		<flag name="qt5">Build Qt5 based GUI</flag>
 		<flag name="python">Build with python support</flag>
+		<flag name="egl">Build with python support</flag>
+		<flag name="opengl">Build with python support</flag>
+		<flag name="gles2">Build with python support</flag>
+		<flag name="vulkan">Build with python support</flag>
+		<flag name="wayland">Build with python support</flag>
+		<flag name="xcb">Build with python support</flag>
+		<flag name="doc">Build with python support</flag>
 	</use>
 	<upstream>
 		<remote-id type="github">baldurk/renderdoc</remote-id>
