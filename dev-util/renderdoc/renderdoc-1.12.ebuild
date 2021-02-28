@@ -17,13 +17,15 @@ CMAKE_BUILD_GENERATOR="Ninja"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~x86"
-IUSE="+qt5 +python"
+IUSE="+qt5 +python +egl +opengl +gles2 +vulkan +doc wayland +xcb"
 
 RDEPEND="${PYTHON_DEPS}
 	dev-libs/libpcre
 	x11-libs/libX11
-	x11-libs/libxcb
-	x11-libs/xcb-util-keysyms
+	xcb? (
+		x11-libs/libxcb
+		x11-libs/xcb-util-keysyms
+	)
 	python? (
 		${PYTHON_DEPS}
 	)
@@ -37,6 +39,7 @@ RDEPEND="${PYTHON_DEPS}
 DEPEND="${RDEPEND}
 	>=sys-devel/gcc-6.0:*
 	dev-util/cmake
+	dev-util/ninja
 	sys-devel/bison
 	app-arch/unzip"
 
@@ -44,6 +47,14 @@ src_configure() {
 	export QT_SELECT=qt5
 	export QMAKE_QT5_COMMAND=qmake-qt5
 	local mycmakeargs=(
+		-DENABLE_EGL="$(usex egl)"
+		-DENABLE_GL="$(usex opengl)"
+		-DENABLE_GLES="$(usex gles2)"
+		-DENABLE_RENDERDOCCMD="$(usex doc)"
+		-DENABLE_VULKAN="$(usex vulkan)"
+		-DENABLE_WAYLAND="$(usex wayland)"
+		-DENABLE_XCB="$(usex xcb)"
+		-DBUILD_VERSION_STABLE=ON
 		-DRENDERDOC_SWIG_PACKAGE="${DISTDIR}/${SWIG_ZIP_FILENAME}"
 	)
 	cmake_src_configure
