@@ -2,7 +2,14 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+dev-util/renderdoc:doc - Build with python support
+dev-util/renderdoc:egl - Build with python support
+dev-util/renderdoc:gles2 - Build with python support
+dev-util/renderdoc:opengl - Build with python support
 dev-util/renderdoc:python - Build with python support
 dev-util/renderdoc:qt5 - Build Qt5 based GUI
+dev-util/renderdoc:vulkan - Build with python support
+dev-util/renderdoc:wayland - Build with python support
+dev-util/renderdoc:xcb - Build with python support
 media-libs/devil:allegro - Add support for Allegro
 media-libs/devil:nvtt - Add support for media-gfx/nvidia-texture-tools
